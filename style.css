@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.l {
+    width: 1400px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 1400px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    margin: 200px auto;
+    animation-name: xadado;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.cards {
+    display: flex;
+    width: 1400px;
+    animation-name: aaa;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.cards h1 {
+    margin: 0 auto;
+}
+
+@keyframes xadado {
+    0% {
+        width: 500px;
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 500px;
+        transform: rotate(180deg);
+    }
+    100% {
+        width: 500px;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aaa {
+    0% {
+        width: 500px;
+        transform: rotate(0deg) translate(10px, 0px) skew(360deg);
+    }
+    50% {
+        width: 500px;
+        transform: rotate(180deg) translate( 10px, 100px);
+    }
+    100% {
+        width: 500px;
+        transform: rotate(360deg) translate( 10px, 0px);
+    }
+}
